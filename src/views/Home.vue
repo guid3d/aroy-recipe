@@ -1,15 +1,17 @@
 <template>
-  <hello-world />
+  <v-container>
+    <recipe-list />
+  </v-container>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import RecipeList from "../components/RecipeList.vue";
 
-  export default {
-    name: 'Home',
+export default {
+  name: "Home",
 
-    components: {
-      HelloWorld,
-    },
-  }
+  components: {
+    RecipeList,
+  },
+};
 </script>
