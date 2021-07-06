@@ -1,7 +1,18 @@
 <template>
-  <v-container>
-    <recipe-list />
-  </v-container>
+  <div>
+    <v-container>
+      <recipe-list />
+    </v-container>
+    <v-btn
+      color="primary"
+      elevation="2"
+      fab
+      class="fab-add-recipe"
+      @click="toAddRecipe"
+    >
+      <v-icon>mdi-plus</v-icon>
+    </v-btn>
+  </div>
 </template>
 
 <script>
@@ -13,5 +24,20 @@ export default {
   components: {
     RecipeList,
   },
+
+  methods: {
+    toAddRecipe() {
+      this.$router.push({ name: "AddRecipe" });
+    },
+  },
 };
 </script>
+
+<style scoped>
+.fab-add-recipe {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin: 16px 16px 16px 16px;
+}
+</style>

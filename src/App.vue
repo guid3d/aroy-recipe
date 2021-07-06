@@ -1,7 +1,7 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar app>
-      <!-- <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon> -->
+    <v-app-bar app color="primary" dark>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>Aroy Recipe</v-toolbar-title>
     </v-app-bar>
